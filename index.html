@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="styles.css" />
+
+		<title>Trackmania Colour Utility</title>
+	</head>
+	<body>
+		<h1>Trackmania Colour Utility</h1>
+		<p>
+			I'll get some nice styling on this at some point but I wanted to quickly explain the
+			purpose of this utility, as well as how to use it.
+		</p>
+		<h2>Purpose</h2>
+		<p>
+			The Trackmania Colour Utility provides an easy-to-use, simple way of filling any and all
+			map signs with a solid colour for any possible hexadecimal code available. This should
+			be a quicker, easier way of doing it than, say, making the image in Photoshop, uploading
+			the image somewhere and then linking to <em>that</em> image from within the game's map
+			editor.
+		</p>
+		<p>
+			Instead, you can now just paste in a link similar to the ones below, and instantly
+			texture your signs with whatever colour you want!
+		</p>
+		<h2>How to use</h2>
+		<p>
+			This utility works by reading a hexadecimal code that you pass in via the URL (the text
+			at the top of your browser). I think some examples might work better than me trying to
+			explain it with words:
+		</p>
+		<ul>
+			<li>
+				Red:
+				<a href="https://trackmania-colour.herokuapp.com/ff0000.png"
+					><code>https://trackmania-colour.herokuapp.com/ff0000.png</code></a
+				>
+			</li>
+			<li>
+				Green:
+				<a href="https://trackmania-colour.herokuapp.com/00ff00.png"
+					><code>https://trackmania-colour.herokuapp.com/00ff00.png</code></a
+				>
+			</li>
+			<li>
+				Blue:
+				<a href="https://trackmania-colour.herokuapp.com/0000ff.png"
+					><code>https://trackmania-colour.herokuapp.com/0000ff.png</code></a
+				>
+			</li>
+		</ul>
+		<p>
+			Each of those links should take you to a page displaying a 1x1 pixel image, in the
+			colour specified by the hexcode (those six letters/numbers) just before the
+			<code>.png</code> in the URL.
+		</p>
+	</body>
+</html>
