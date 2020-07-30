@@ -8,7 +8,7 @@ const context = canvas.getContext('2d')
 
 const express = require("express");
 const app = express();
-const port = 3000
+const port = process.env.PORT || 3000
 
 // Regex for a valid hexcode string (either 3 or 6 chars).
 const hexMatch = RegExp("^(?:[0-9a-fA-F]{3}){1,2}$");
