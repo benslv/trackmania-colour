@@ -1,0 +1,11 @@
+{
+  "name": "colour-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security"
+  }
+}
