@@ -15,7 +15,7 @@ const hexMatch = RegExp("^(?:[0-9a-fA-F]{3}){1,2}$");
 
 app.get("/", (req, res) => res.send("Hello! The server is successfully running."))
 
-app.get("/:hexcode", (req, res) => {
+app.get("/:hexcode.png", (req, res) => {
 
     const {hexcode} = req.params;
 
@@ -29,7 +29,7 @@ app.get("/:hexcode", (req, res) => {
     context.fillRect(0,0, width, height);
 
     // Write the canvas information to a jpeg image.
-    const buffer = canvas.toBuffer("image/jpeg");
+    const buffer = canvas.toBuffer("image/png");
     fs.writeFileSync("./output.png", buffer);
 
     // Send the resulting image back to the user.
